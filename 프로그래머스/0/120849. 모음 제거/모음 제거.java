@@ -8,5 +8,8 @@ class Solution {
         }
         
         return answer;
+        
+        // 정규표현식 방법
+        // return my_string.replaceAll("[aeiou]", "");
     }
 }
