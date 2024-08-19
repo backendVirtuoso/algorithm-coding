@@ -1,7 +1,20 @@
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 class Solution {
     public int[] solution(int[] numbers) {
+        Set<Integer> set = new HashSet<>();
+
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = i + 1; j < numbers.length; j++) {
+                set.add(numbers[i] + numbers[j]);
+            }
+        }
+
+        return set.stream().mapToInt(Integer::intValue).sorted().toArray();
+        
+        /* 내가 작성한 코드
         int[] temp = new int[numbers.length * (numbers.length - 1) / 2];
         int tempIndex = 0;
         
@@ -22,5 +35,7 @@ class Solution {
         }
         
         return Arrays.copyOf(result, resultIndex);
+        */
     }
+    
 }
