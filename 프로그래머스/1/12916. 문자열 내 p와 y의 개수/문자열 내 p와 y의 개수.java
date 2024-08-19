@@ -1,6 +1,28 @@
-class Solution {
+public class Solution {
     boolean solution(String s) {
-/*      내가 직접 푼 방식         
+//         s = s.toLowerCase();
+//         int ps = s.length() - s.replace("p", "").length();
+//         int ys = s.length() - s.replace("y", "").length();
+//         return ps == ys;
+        
+        // 효율 
+        int ps = 0;
+	    int ys = 0;
+
+        for (char c : s.toCharArray()) {
+            switch (c) {
+                case 'p', 'P' -> ps++;
+                case 'y', 'Y' -> ys++;
+            }
+        }
+
+        return ps == ys;
+    }
+}
+
+/*
+class Solution {
+    boolean solution(String s) {  
         boolean answer = true;
         int p_cnt = 0;
         int y_cnt = 0;
@@ -20,19 +42,19 @@ class Solution {
         }
 
         return answer;
-*/        
-        /* 다른 사람들의 방식을 참고 */
-        boolean answer = true;
+    
+        // 다른 사람들의 방식을 참고 
         int cnt = 0;
         
         for(int i = 0; i < s.length(); i++) {
             if ('p' == Character.toLowerCase(s.charAt(i))) {
-                cnt ++;
+                cnt++;
             } else if ('y' == Character.toLowerCase(s.charAt(i))) {
-                cnt --;
+                cnt--;
             }
         }
 
         return cnt == 0;
     }
 }
+*/
