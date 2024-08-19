@@ -1,10 +1,10 @@
 # [level 0] 중복된 문자 제거 - 120888 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120888?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120888) 
 
 ### 성능 요약
 
-메모리: 86.6 MB, 시간: 14.11 ms
+메모리: 76.5 MB, 시간: 0.24 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 04월 07일 17:17:53
+2024년 08월 19일 19:59:00
 
 ### 문제 설명
 
