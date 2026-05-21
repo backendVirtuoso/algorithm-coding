@@ -1,10 +1,10 @@
 # [level 0] 문자 개수 세기 - 181902 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181902) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181902?language=python3) 
 
 ### 성능 요약
 
-메모리: 63.4 MB, 시간: 0.79 ms
+메모리: 9.15 MB, 시간: 0.25 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 05월 21일 17:21:09
+2026년 05월 21일 17:21:30
 
 ### 문제 설명
 
